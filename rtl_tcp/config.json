@@ -1,0 +1,17 @@
+{
+    "name": "rtl_tcp Server",
+    "version": "0.1",
+    "slug": "rtl_tcp",
+    "description": "RTL TCP server based on RTL_SDR for RTL2832U based DVB-T USB tuners",
+    "url": "https://github.com/kkamperschroer/hassio-addons/tree/master/rtl_tcp",
+    "startup": "before",
+    "boot": "auto",
+    "map": ["config:rw", "ssl"],
+    "devices": ["/dev/bus/usb:/dev/bus/usb:rwm"],
+    "host_network": "True",
+    "options": {},
+    "schema": {},
+    "ports": {
+      "1234/tcp": 1234
+    }
+}
